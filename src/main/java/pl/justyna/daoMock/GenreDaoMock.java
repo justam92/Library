@@ -16,35 +16,35 @@ public class GenreDaoMock implements GenreDao {
 		
 		Book book1 = new Book();
 		book1.setId(1);
-		book1.setName("Wodecki. Tak mi wysz³o");
-		book1.setAuthor("Ba³uk Kamil, Krupiñski Wac³aw");
+		book1.setName("Wodecki. Tak mi wyszÅ‚o");
+		book1.setAuthor("BaÅ‚uk Kamil, KrupiÅ„ski WacÅ‚aw");
 		book1.setGenreOfBook(GenreOfBook.Biografia);
 		book1.setYearOfPublishment(2018);
 		
 		Book book3 = new Book();
 		book3.setId(3);
-		book3.setName("Czerwone krzes³o. Magiczne drzewo. Tom 1");
+		book3.setName("Czerwone krzesÅ‚o. Magiczne drzewo. Tom 1");
 		book3.setAuthor("Maleszka Andrzej");
 		book3.setGenreOfBook(GenreOfBook.DlaDzieci);
 		book3.setYearOfPublishment(2015);
 		
 		Book book5 = new Book();
 		book5.setId(5);
-		book5.setName("Fantastyczne zwierzêta i jak je znaleŸæ. Leksykon");
+		book5.setName("Fantastyczne zwierzÄ™ta i jak je znaleÅºÄ‡. Leksykon");
 		book5.setAuthor("Rowling J.K.");
-		book5.setGenreOfBook(GenreOfBook.DlaM³odzie¿y);
+		book5.setGenreOfBook(GenreOfBook.DlaMlodziezy);
 		book5.setYearOfPublishment(2017);
 		
 		Book book7 = new Book();
 		book7.setId(7);
-		book7.setName("WiedŸmin. Tom 1. Ostatnie ¿yczenie");
+		book7.setName("WiedÅºmin. Tom 1. Ostatnie Å¼yczenie");
 		book7.setAuthor("Sapkowski Andrzej");
 		book7.setGenreOfBook(GenreOfBook.Fantasy);
 		book7.setYearOfPublishment(2014);
 		
 		Book book9 = new Book();
 		book9.setId(9);
-		book9.setName("Cmêtarz zwie¿¹t");
+		book9.setName("CmÄ™tarz zwieÅ¼Ä…t");
 		book9.setAuthor("King Stephen");
 		book9.setGenreOfBook(GenreOfBook.Horror);
 		book9.setYearOfPublishment(2009);
@@ -80,7 +80,7 @@ public class GenreDaoMock implements GenreDao {
 		
 		Genre genre3 = new Genre();
 		genre3.setId(3);
-		genre3.setName(GenreOfBook.DlaM³odzie¿y);
+		genre3.setName(GenreOfBook.DlaMlodziezy);
 		genre3.getBooks().add(book5);
 		
 		genres.add(genre3);
@@ -130,7 +130,7 @@ public class GenreDaoMock implements GenreDao {
 	
 	public void deleteById(Integer id) {
 		System.out.println(" ");
-		System.out.println("USUWANIE DANYCH O GATUNKU KSI¥¯EK");
+		System.out.println("USUWANIE DANYCH O GATUNKU KSIÄ„Å»EK");
 		System.out.println(" ");
 		
 		List<Genre> genres = selectAll();
@@ -144,7 +144,7 @@ public class GenreDaoMock implements GenreDao {
 			}
 		}
 		if(hasGenreBeenFound) {
-			System.out.println("Dane o gatunku o id: " + id + " zosta³y usuniête...");
+			System.out.println("Dane o gatunku o id: " + id + " zostaÅ‚y usuniÄ™te...");
 		} else {
 			System.out.println("W bazie danych nie ma gatunku o id: " + id);
 		}

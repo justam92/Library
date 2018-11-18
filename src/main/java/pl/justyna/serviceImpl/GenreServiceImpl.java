@@ -2,6 +2,8 @@ package pl.justyna.serviceImpl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import pl.justyna.dao.GenreDao;
 import pl.justyna.daoMock.GenreDaoMock;
 import pl.justyna.model.Book;
@@ -9,6 +11,7 @@ import pl.justyna.model.Genre;
 import pl.justyna.model.GenreOfBook;
 import pl.justyna.service.GenreService;
 
+@Service
 public class GenreServiceImpl implements GenreService {
 	
 	private GenreDao genreDao = new GenreDaoMock();
@@ -42,7 +45,7 @@ public class GenreServiceImpl implements GenreService {
 		}
 
 		if (hasTheSameGenreNameBeenFound) {
-			System.out.println("Do bazy danych dodano ksi¹¿kê gatunku: " + bookGenre);
+			System.out.println("Do bazy danych dodano ksiÄ…Å¼ke gatunku: " + bookGenre);
 		} else {
 			System.out.println("W bazie danych nie ma gatunku o nazwie: " + bookGenre);
 		}

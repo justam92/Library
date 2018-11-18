@@ -1,0 +1,15 @@
+pl\justyna\model\Genre.class
+pl\justyna\service\GenreService.class
+pl\justyna\controller\BookController.class
+pl\justyna\serviceImpl\BookServiceImpl.class
+pl\justyna\serviceImpl\GenreServiceImpl.class
+pl\justyna\daoMock\GenreDaoMock.class
+pl\justyna\dao\BookDao.class
+pl\justyna\model\Book.class
+pl\justyna\model\GenreOfBook.class
+pl\justyna\controller\GenreController.class
+pl\justyna\service\BookService.class
+pl\justyna\daoMock\BookDaoMock.class
+pl\justyna\MainStary.class
+pl\justyna\dao\GenreDao.class
+pl\justyna\LibraryApplication.class

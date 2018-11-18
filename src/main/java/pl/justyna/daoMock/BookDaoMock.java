@@ -15,8 +15,8 @@ public class BookDaoMock implements BookDao {
 		
 		Book book1 = new Book();
 		book1.setId(1);
-		book1.setName("Wodecki. Tak mi wysz³o");
-		book1.setAuthor("Ba³uk Kamil, Krupiñski Wac³aw");
+		book1.setName("Wodecki. Tak mi wyszÅ‚o");
+		book1.setAuthor("BaÅ‚uk Kamil, KrupiÅ„ski WacÅ‚aw");
 		book1.setGenreOfBook(GenreOfBook.Biografia);
 		book1.setYearOfPublishment(2018);
 		
@@ -24,8 +24,8 @@ public class BookDaoMock implements BookDao {
 		
 		Book book2 = new Book();
 		book2.setId(2);
-		book2.setName("Kuba Wojewódzki. Nieautoryzowana autobiografia");
-		book2.setAuthor("Wojewódzki Kuba");
+		book2.setName("Kuba WojewÃ³dzki. Nieautoryzowana autobiografia");
+		book2.setAuthor("WojewÃ³dzki Kuba");
 		book2.setGenreOfBook(GenreOfBook.Biografia);
 		book2.setYearOfPublishment(2018);
 		
@@ -33,7 +33,7 @@ public class BookDaoMock implements BookDao {
 		
 		Book book3 = new Book();
 		book3.setId(3);
-		book3.setName("Czerwone krzes³o. Magiczne drzewo. Tom 1");
+		book3.setName("Czerwone krzesÅ‚o. Magiczne drzewo. Tom 1");
 		book3.setAuthor("Maleszka Andrzej");
 		book3.setGenreOfBook(GenreOfBook.DlaDzieci);
 		book3.setYearOfPublishment(2015);
@@ -42,8 +42,8 @@ public class BookDaoMock implements BookDao {
 		
 		Book book4 = new Book();
 		book4.setId(4);
-		book4.setName("Która to Malala?");
-		book4.setAuthor("Pi¹tkowska Renata");
+		book4.setName("KtÃ³ra to Malala?");
+		book4.setAuthor("PiÄ…tkowska Renata");
 		book4.setGenreOfBook(GenreOfBook.DlaDzieci);
 		book4.setYearOfPublishment(2015);
 		
@@ -51,25 +51,25 @@ public class BookDaoMock implements BookDao {
 		
 		Book book5 = new Book();
 		book5.setId(5);
-		book5.setName("Fantastyczne zwierzêta i jak je znaleŸæ. Leksykon");
+		book5.setName("Fantastyczne zwierzÄ™ta i jak je znaleÅºÄ‡. Leksykon");
 		book5.setAuthor("Rowling J.K.");
-		book5.setGenreOfBook(GenreOfBook.DlaM³odzie¿y);
+		book5.setGenreOfBook(GenreOfBook.DlaMlodziezy);
 		book5.setYearOfPublishment(2017);
 		
 		books.add(book5);
 		
 		Book book6 = new Book();
 		book6.setId(6);
-		book6.setName("Ksiê¿niczka Popio³u");
+		book6.setName("KsiÄ™niczka PopioÅ‚u");
 		book6.setAuthor("Laura Sebastian");
-		book6.setGenreOfBook(GenreOfBook.DlaM³odzie¿y);
+		book6.setGenreOfBook(GenreOfBook.DlaMlodziezy);
 		book6.setYearOfPublishment(2018);
 		
 		books.add(book6);
 		
 		Book book7 = new Book();
 		book7.setId(7);
-		book7.setName("WiedŸmin. Tom 1. Ostatnie ¿yczenie");
+		book7.setName("WiedÅºmin. Tom 1. Ostatnie Å¼yczenie");
 		book7.setAuthor("Sapkowski Andrzej");
 		book7.setGenreOfBook(GenreOfBook.Fantasy);
 		book7.setYearOfPublishment(2014);
@@ -87,7 +87,7 @@ public class BookDaoMock implements BookDao {
 		
 		Book book9 = new Book();
 		book9.setId(9);
-		book9.setName("Cmêtarz zwie¿¹t");
+		book9.setName("CmÄ™tarz zwieÅ¼Ä…t");
 		book9.setAuthor("King Stephen");
 		book9.setGenreOfBook(GenreOfBook.Horror);
 		book9.setYearOfPublishment(2009);
@@ -114,7 +114,7 @@ public class BookDaoMock implements BookDao {
 		
 		Book book12 = new Book();
 		book12.setId(12);
-		book12.setName("Kajko i Kokosz. Szko³a latania.");
+		book12.setName("Kajko i Kokosz. SzkoÅ‚a latania.");
 		book12.setAuthor("Christa Janusz");
 		book12.setGenreOfBook(GenreOfBook.Komiks);
 		book12.setYearOfPublishment(2011);
@@ -132,7 +132,7 @@ public class BookDaoMock implements BookDao {
 		
 		Book book14 = new Book();
 		book14.setId(14);
-		book14.setName("Czarownice nie p³on¹");
+		book14.setName("Czarownice nie pÅ‚onÄ…");
 		book14.setAuthor("Blackhurst Jenny");
 		book14.setGenreOfBook(GenreOfBook.Thriller);
 		book14.setYearOfPublishment(2018);
@@ -151,7 +151,7 @@ public class BookDaoMock implements BookDao {
 			}
 		}
 		
-		throw new RuntimeException("Brak ksi¹zki o id: " + id);
+		throw new RuntimeException("Brak ksiÄ…Å¼ki o id: " + id);
 	}
 
 	public void register(Book book) {
@@ -181,7 +181,7 @@ public class BookDaoMock implements BookDao {
 
 	public void deleteById(Integer id) {
 		System.out.println(" ");
-		System.out.println("USUWANIE DANYCH O KSI¥¯CE");
+		System.out.println("USUWANIE DANYCH O KSIÄ„Å»CE");
 		System.out.println(" ");
 
 		List<Book> books = selectAll();
@@ -196,9 +196,9 @@ public class BookDaoMock implements BookDao {
 		}
 
 		if (hasBookBeenFound) {
-			System.out.println("Dane o ksi¹¿ce o id " + id + " zosta³y usuniête...");
+			System.out.println("Dane o ksiÄ…Å¼ce o id " + id + " zostaÅ‚y usuniÄ™te...");
 		} else {
-			System.out.println("W bazie danych nie ma ksi¹¿ki o id: " + id);
+			System.out.println("W bazie danych nie ma ksiÄ…Å¼ki o id: " + id);
 		}
 
 	}
